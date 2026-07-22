@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/nh_bg">
+
+    <LinearLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <!-- NH Top Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_nh_toolbar"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="18dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NH OFFLINE AI"
+                    android:textColor="@color/nh_gold"
+                    android:textSize="22sp"
+                    android:letterSpacing="0.04"
+                    android:fontFamily="@font/nh_display" />
+
+                <TextView
+                    android:id="@+id/model_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="@string/hint_pick_model"
+                    android:textColor="@color/nh_text_muted"
+                    android:textSize="11.5sp"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/info_btn"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/bg_nh_icon_button"
+                android:src="@drawable/outline_info_24"
+                app:tint="@color/nh_gold"
+                android:contentDescription="Model info"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@drawable/divider_gold" />
+
+        <!-- Chat messages -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/messages"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/item_message_assistant" />
+
+        <!-- Empty state hint, shown until first message -->
+        <TextView
+            android:id="@+id/empty_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:text="@string/hint_pick_model"
+            android:textColor="@color/nh_text_muted"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:paddingHorizontal="40dp" />
+
+        <!-- Input bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/nh_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_nh_input_bar"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/user_input"
+                    android:enabled="false"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/hint_pick_model"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/nh_text_primary"
+                    android:textColorHint="@color/nh_text_muted"
+                    android:textSize="14sp"
+                    android:maxLines="4" />
+            </LinearLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:enabled="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/outline_folder_open_24"
+                app:backgroundTint="@color/nh_red"
+                app:tint="@color/nh_text_primary"
+                app:elevation="0dp"
+                app:borderWidth="0dp"
+                app:fabSize="normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

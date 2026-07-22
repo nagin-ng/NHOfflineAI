@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- NH monogram, red-to-gold gradient -->
+    <path android:pathData="M28,36 L28,72 L37,72 L37,52 L60,72 L69,72 L69,36 L60,36 L60,56 L37,36 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="28"
+                android:startY="36"
+                android:endX="69"
+                android:endY="72"
+                android:type="linear">
+                <item android:color="#E22C2C" android:offset="0.0" />
+                <item android:color="#D4AF37" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillColor="#D4AF37"
+        android:pathData="M74,36 L82,36 L82,72 L74,72 Z" />
+</vector>

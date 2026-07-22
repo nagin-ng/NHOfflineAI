@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NH Offline AI</string>
+    <string name="app_tagline">Bina internet ke AI, seedhe tumhare mobile mein</string>
+    <string name="hint_pick_model">Pehle ek GGUF model file import karo</string>
+    <string name="hint_parsing">Model padha ja raha hai…</string>
+    <string name="hint_copying">Model copy ho raha hai…</string>
+    <string name="hint_loading">Model load ho raha hai…</string>
+    <string name="hint_ready">Message likho aur bhejo</string>
+    <string name="empty_input">Pehle kuch likho</string>
+</resources>

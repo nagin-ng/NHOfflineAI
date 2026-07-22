@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.NHOfflineAI" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/nh_bg</item>
+        <item name="colorPrimary">@color/nh_red</item>
+        <item name="colorPrimaryVariant">@color/nh_red_dark</item>
+        <item name="colorOnPrimary">@color/nh_text_primary</item>
+        <item name="colorSecondary">@color/nh_gold</item>
+        <item name="colorOnSecondary">@color/nh_bg</item>
+        <item name="colorSurface">@color/nh_surface</item>
+        <item name="colorOnSurface">@color/nh_text_primary</item>
+        <item name="colorAccent">@color/nh_gold</item>
+        <item name="android:statusBarColor">@color/nh_bg</item>
+        <item name="android:navigationBarColor">@color/nh_bg</item>
+        <item name="android:textColorHint">@color/nh_text_muted</item>
+        <item name="fontFamily">@font/nh_display</item>
+    </style>
+
+    <style name="Theme.NHOfflineAI" parent="Base.Theme.NHOfflineAI" />
+
+    <style name="NH.Text.Header" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/nh_display</item>
+        <item name="android:textColor">@color/nh_gold</item>
+        <item name="android:letterSpacing">0.03</item>
+    </style>
+
+    <style name="NH.Text.Body" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/nh_text_secondary</item>
+    </style>
+</resources>

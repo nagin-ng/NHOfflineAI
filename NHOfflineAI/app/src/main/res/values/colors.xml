@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- NH Developer brand palette -->
+    <color name="nh_bg">#0B0B0D</color>
+    <color name="nh_surface">#161418</color>
+    <color name="nh_surface_alt">#1F1B1E</color>
+    <color name="nh_card_stroke">#2A2226</color>
+
+    <color name="nh_red">#E22C2C</color>
+    <color name="nh_red_dark">#8C1414</color>
+    <color name="nh_gold">#D4AF37</color>
+    <color name="nh_gold_soft">#E8CE84</color>
+
+    <color name="nh_text_primary">#F5F1E8</color>
+    <color name="nh_text_secondary">#B8AFA9</color>
+    <color name="nh_text_muted">#7A716B</color>
+
+    <color name="nh_bubble_user">#E22C2C</color>
+    <color name="nh_bubble_assistant">#1F1B1E</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+</resources>
